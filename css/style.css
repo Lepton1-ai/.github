@@ -1,0 +1,62 @@
+:root {
+    background: #282a36;
+}
+
+.github-readme-stats {
+    display: none;
+}
+
+.github-readme-stats-image{
+    align-items: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+
+.github-readme-stats-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/*Make a loaded that shows for 3 second before the page loads*/
+
+.loader {
+    border: 5px solid #f3f3f300;
+    border-radius: 50%;
+    border-top: 5px solid #ff7518;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: 20px 0;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { 
+        -webkit-transform: rotate(0deg);
+    }
+    100% { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
