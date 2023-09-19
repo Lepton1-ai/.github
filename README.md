@@ -1,0 +1,3 @@
+# .github
+
+Just basic website
