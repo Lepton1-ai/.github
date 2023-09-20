@@ -32,8 +32,8 @@ jobs:
           path: lepton1
       - name: Setup Pages
         uses: actions/configure-pages@v3
-        with:
-          path: lepton1
+      - name: Directory
+        run: cd lepton1
       - name: Install
         run: npm i
       - name: Build
