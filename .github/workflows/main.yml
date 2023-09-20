@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get dict
-        run: cd lepton1
+        run: cd ~/lepton1
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
