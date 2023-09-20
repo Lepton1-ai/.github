@@ -32,10 +32,10 @@ jobs:
           path: lepton1
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Directory
-        run: cd lepton1
       - name: Install
-        run: npm i
+        run: |
+            cd lepton1
+            npm i
       - name: Build
         run: npm run build
         env:
