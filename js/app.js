@@ -71,8 +71,7 @@ $(document).ready(function() {
     }, 1);
 });
 
-
-function Ticker( elem ) {
+function Ticker(elem) {
 	elem.lettering();
 	this.done = false;
 	this.cycleCount = 5;
