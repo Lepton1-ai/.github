@@ -26,10 +26,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: get dict
-        run: cd ~/lepton1
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          path: ~/lepton1
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Install
