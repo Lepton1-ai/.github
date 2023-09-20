@@ -29,9 +29,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: ~/lepton1
+          path: lepton1
       - name: Setup Pages
         uses: actions/configure-pages@v3
+        with:
+          path: lepton1
       - name: Install
         run: npm i
       - name: Build
@@ -41,7 +43,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist
+          path: lepton1/dist
 
   # Deployment job
   deploy:
