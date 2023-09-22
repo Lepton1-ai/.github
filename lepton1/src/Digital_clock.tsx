@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./time.css";
+
 function CLOCK(){
   const time = new Date().toLocaleTimeString();
   const [curr_time, set_time] = useState(time);
@@ -15,4 +16,5 @@ function CLOCK(){
     </div>
   );
 }
+
 export default CLOCK
