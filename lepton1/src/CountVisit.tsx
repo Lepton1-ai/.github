@@ -1,7 +1,16 @@
 import { useState, useEffect } from 'react';
+import fs from 'fs';
 
 const CountVisit = () => {
   const [count, setCount] = useState(0);
+
+  fs.writeFile('saveinfo.json', JSON.stringify({ count: count }), (err: boolean) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log('File written successfully\n');
+    }
+  });
 
   useEffect(() => {
     const count = localStorage.getItem('count');
