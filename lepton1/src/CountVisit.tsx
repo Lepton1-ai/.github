@@ -1,19 +1,23 @@
-import saveinfo from './saveinfo.json';
-import { getDatabase } from "firebase/database";
+// import fire from "./firebaseauth.tsx";
+// import { collection, addDoc, getDoc, doc } from "firebase/firestore"
 
-const CountVisit = (count: any) => {
-    const firebaseConfig = {
-        databaseURL: "https://lepton-github-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    }
-    const database = getDatabase();
-    if (count === false) {
-        return saveinfo.count
-    }
-    saveinfo.count = count;
-    console.log(saveinfo.count);
-    
-    return saveinfo.count;
-};
+// const CountVisit = (count: any) => {
+//     const colRef = collection(fire, 'count')
 
-export default CountVisit;
+//     const oldcount = getDoc(doc(fire, 'count'))
+
+//     if (!oldcount.exists()) {
+//         addDoc(colRef, { count: 0 })
+//     }
+
+//     if (count === false) {
+//         return oldcount
+//     }
+
+//     addDoc(colRef, { count: count })
+
+//     return count;
+// };
+
+// export default CountVisit;
 

@@ -1,20 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-<<<<<<< Updated upstream
-import CountVisit from './CountVisit.tsx'
-=======
-<<<<<<< HEAD
+// import CountVisit from './CountVisit.tsx'
+
 import CLOCK from './Digital_clock.tsx'
-=======
-import CountVisit from './CountVisit.tsx'
->>>>>>> 1fd04260ada08dbc87225e6f4a7a0f5f94f40fc0
->>>>>>> Stashed changes
+
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const oldcount = CountVisit(false)
+  // const oldcount = CountVisit(false)
   return (
     <>
       <div>
@@ -27,8 +22,8 @@ function App() {
       </div>
       <h1>HE HE Boi</h1>
       <div className="card">
-        <button onClick={() => {setCount((count) => count + 1);  CountVisit(count)}}>
-          count is {count > 0 ? count : oldcount}
+        <button onClick={() => {setCount((count) => count + 1)}}>
+          count is {count}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
