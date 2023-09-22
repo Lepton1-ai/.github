@@ -1,16 +1,10 @@
 import { useState, useEffect } from 'react';
-import fs from 'fs';
+import saveinfo from './saveinfo.json';
 
 const CountVisit = () => {
   const [count, setCount] = useState(0);
-
-  fs.writeFile('saveinfo.json', JSON.stringify({ count: count }), (err: boolean) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log('File written successfully\n');
-    }
-  });
+  const oldCount = JSON.stringify(saveinfo);
+  console.log(oldCount);
 
   useEffect(() => {
     const count = localStorage.getItem('count');
