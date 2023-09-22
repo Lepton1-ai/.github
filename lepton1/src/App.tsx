@@ -1,7 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+<<<<<<< Updated upstream
 import CountVisit from './CountVisit.tsx'
+=======
+<<<<<<< HEAD
+import CLOCK from './Digital_clock.tsx'
+=======
+import CountVisit from './CountVisit.tsx'
+>>>>>>> 1fd04260ada08dbc87225e6f4a7a0f5f94f40fc0
+>>>>>>> Stashed changes
 import './App.css'
 
 function App() {
@@ -29,6 +37,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div>
+        <CLOCK/>
+      </div>
     </>
   )
 }
