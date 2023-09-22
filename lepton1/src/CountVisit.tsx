@@ -1,29 +1,15 @@
-import { useState, useEffect } from 'react';
 import saveinfo from './saveinfo.json';
+import saveAs from 'file-saver';
 
-const CountVisit = () => {
-  const [count, setCount] = useState(0);
-  const oldCount = JSON.stringify(saveinfo);
-  console.log(oldCount);
-
-  useEffect(() => {
-    const count = localStorage.getItem('count');
-    if (count) {
-      setCount(Number(count));
+const CountVisit = (count: any) => {
+    if (count === false) {
+        return saveinfo.count
     }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('count', count.toString());
-  }, [count]);
-
-  return (
-    <div>
-      <h1>Global Count Visit</h1>
-      <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-    </div>
-  );
+    saveinfo.count = count;
+    console.log(saveinfo.count);
+    const blob = new Blob([JSON.stringify(saveinfo)], {type: "application/json"});
+    saveAs(blob, "saveinfo.json");
+    return saveinfo.count;
 };
 
 export default CountVisit;
