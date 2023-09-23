@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 // import CountVisit from './CountVisit.tsx'
+import Navbar from './components/navbar/Navbar.tsx'
 
 import CLOCK from './Digital_clock.tsx'
 
@@ -12,7 +13,10 @@ function App() {
   // const oldcount = CountVisit(false)
   return (
     <>
-      <div>
+    <div>
+      <Navbar/>
+    </div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -31,10 +35,10 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
-      <div>
+      </p> */}
+      {/* <div>
         <CLOCK/>
-      </div>
+      </div> */}
     </>
   )
 }
