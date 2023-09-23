@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 // import CountVisit from './CountVisit.tsx'
 import Navbar from './components/navbar/Navbar.tsx'
 
-import CLOCK from './Digital_clock.tsx'
+// import CLOCK from './Digital_clock.tsx'
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   // const oldcount = CountVisit(false)
   return (
     <>
