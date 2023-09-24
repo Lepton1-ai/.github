@@ -1,5 +1,4 @@
 import './copywriteFooter.scss';
-import React from 'react';
 
 function CopywriteFooter() {
     return (
