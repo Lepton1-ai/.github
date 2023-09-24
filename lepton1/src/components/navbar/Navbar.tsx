@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import './navbar.css'
+import './navbar.scss'
 import testsvg from '/src/assets/lepton_1_logo_black.svg'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
