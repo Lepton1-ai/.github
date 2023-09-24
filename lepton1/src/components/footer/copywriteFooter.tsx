@@ -1,4 +1,4 @@
-import './copywriteFooter.scss';
+import '/copywriteFooter.scss';
 
 function CopywriteFooter() {
     return (
