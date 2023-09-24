@@ -125,6 +125,10 @@ input{
                 padding: .5rem 0;
                 .navItem{
                     padding: .5rem 0;
+                    transition: all 300ms ease-in;
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                     .navlink{
                         font-size: .9rem;
                         font-weight: 600;
@@ -194,9 +198,13 @@ input{
             .navLists{
                 .navItem{
                     padding: 0 1rem;
+                    transition: all 300ms ease-in;
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                     .navlink{
                         font-size: 14px;
-                        padding: 13px 2px;
+                        /* padding: 13px 2px; */
                         color: #00156A;
                         &:hover{
                             text-decoration-line: underline;
@@ -206,7 +214,7 @@ input{
                     }
                 }
                 .btn{
-                    margin-right: 2rem;
+                    margin-right: 2.5rem;
                 }
             }
         }
@@ -229,6 +237,10 @@ input{
             .navLists{
                 .navItem{
                     padding: 0 1rem;
+                    transition: all 300ms ease-in;
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                     .navlink{
                         font-size: 16px;
                         padding: 13px 10px;
