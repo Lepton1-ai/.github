@@ -1,5 +1,5 @@
 import Navbar from './components/navbar/Navbar.tsx'
-
+import Header from './components/header/Header.tsx'
 import './App.scss'
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <>
     <div>
       <Navbar/>
+      <Header/>
     </div>
     </>
   )

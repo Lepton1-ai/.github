@@ -17,9 +17,7 @@ const Navbar = () => {
       <header className="flex_header flex">
         <div className="logo_section">
           <a href="#" className="logo flex">
-            <img className='lepton_logo' style={{
-
-              }} src={testsvg}/>
+            <img className='lepton_logo' src={testsvg}/>
             {/* <h1>hridoy</h1> */}
           </a>
         </div>
