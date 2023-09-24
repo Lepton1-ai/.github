@@ -1,6 +1,11 @@
 a{
     text-decoration: none;
 }
+.navbarSection{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
 li{
     list-style: none;
 }
@@ -24,24 +29,57 @@ li{
     display: grid;
     align-items: center;
 }
-.btn{
+/* .btn{
     padding: .6rem 1.5rem;
-    background-image: linear-gradient(to right,hsl(187,
-    85%, 43%),hsl(199, 100%, 33%));
-    background-image: linear-gradient(to left, orange, red);
+    
     border-radius: 3rem;
+    border-color: #4A42EA;
+    background-color: white;
     border: none;
     outline: none;
     cursor: pointer;
-}
-.btn a{
-    color: white;
+} */
+/* .btn a{
+    color: #4A42EA;
     font-weight: 500;
+    &:hover{
+        color: white;
+        background-color: #4A42EA;
+    }
 }
 .btn:hover{
-    background-color: hsl(187, 85%, 43%);
-    color: black;
-}
+    background-color: #4A42EA;
+    
+} */
+.btn {
+    /* background-image: linear-gradient(to right,hsl(187,
+    85%, 43%),hsl(199, 100%, 33%)); */
+    /* background-image: linear-gradient(to left, orange, red); */
+    border-radius: 0.5rem;
+    border: 2px solid #4A42EA; /* Initial button border color */
+    background-color: white; /* Initial button background color */
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition effect for hover */
+  }
+  
+  .btn a {
+    color: #4A42EA; /* Initial text color */
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: blue; /* Button background color on hover */
+    /* border-color: white; Button border color on hover */
+  }
+  
+  .btn:hover a {
+    color: white; /* Text color on hover */
+  }
 img, video{
     width: 100%;
     height: auto;
@@ -59,18 +97,18 @@ input{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: wheat; */
+    background-color: aqua;
     width: 100%;
-    /* padding: 1rem; */
+    padding: 1rem;
     z-index: 1000;
-    @media screen and (max-width: 2000px){
+    @media screen and (max-width: 768px){
         .navBar{
             position: absolute;
             height: max-content;
-            width: 80%;
-            border-radius: 1rem;
+            width: 60%;
+            border-radius:0.5rem;
             top: -500rem;
-            /* margin-top: 6rem; */
+            margin-top: -1rem;
             left: 50%;
             /* padding: 1rem; */
             transform: translate(-50%);
@@ -89,8 +127,10 @@ input{
                     .navlink{
                         font-size: .9rem;
                         font-weight: 600;
+                        color: #00156A;
                         &:hover{
-                            color: green;
+                            color: #4A42EA;
+                            text-decoration-line: underline;
                         }
                     }
                 }
@@ -99,7 +139,7 @@ input{
 
                     a{
                         font-weight: 600;
-                        color: whitesmoke;
+                        /* color: whitesmoke; */
                     }
                 }
             }
@@ -107,9 +147,25 @@ input{
                 position: absolute;
                 top: 1rem;
                 right: 1rem;
-                color: aqua;
+                color: #00156A;
                 &:hover{
-                    color: black;
+                    color: #4A42EA;
+                }
+            }
+        }
+        .toggleNavbar{
+            margin-top: 1rem;
+            padding-bottom: 0.3rem;
+            margin-right: -3rem;
+        }
+        .logo_section{
+            .logo{
+                .lepton_logo{
+                    position: absolute;
+                    height: 150px;
+                    width: 150px;
+                    margin-top: 1rem;
+                    margin-left: 10rem;
                 }
             }
         }
@@ -126,4 +182,114 @@ input{
             color: aqua;
         }
     }
+}
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar,.closeNavbar{
+        display: none;
+    }
+    .flex_header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 1rem;
+                    .navlink{
+                        font-size: 14px;
+                        padding: 13px 2px;
+                        color: #00156A;
+                        &:hover{
+                            text-decoration-line: underline;
+                            color: #4A42EA;
+                            
+                        }
+                    }
+                }
+                .btn{
+                    margin-right: 2rem;
+                }
+            }
+        }
+        .logo_section{
+            .logo{
+                .lepton_logo{
+                    position: absolute;
+                    height: 200px;
+                    width: 200px;
+                    margin-top: 2rem;
+                    margin-left: 12rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .flex_header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 1rem;
+                    .navlink{
+                        font-size: 16px;
+                        padding: 13px 10px;
+                        color: #00156A;
+                        &:hover{
+                            text-decoration-line: underline;
+                            color: #4A42EA;
+                            
+                        }
+                    }
+                }
+                .btn{
+                    margin-right: 6rem;
+                }
+            }
+        }
+        .logo_section{
+            .logo{
+                .lepton_logo{
+                    position: absolute;
+                    height: 250px;
+                    width: 250px;
+                    margin-top: 2rem;
+                    margin-left: 15rem;
+                }
+            }
+        }
+    
+}
+@media screen and (min-width: 1200px) {
+    .flex_header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 1rem;
+                    .navlink{
+                        font-size: 16px;
+                        padding: 13px 20px;
+                        color: #00156A;
+                        &:hover{
+                            text-decoration-line: underline;
+                            color: #4A42EA;
+                            
+                        }
+                    }
+                }
+                .btn{
+                    margin-right: 6rem;
+                }
+            }
+        }
+        .logo_section{
+            .logo{
+                .lepton_logo{
+                    position: absolute;
+                    height: 300px;
+                    width: 300px;
+                    margin-top: 2rem;
+                    margin-left: 15rem;
+                }
+            }
+        }
+    }
+    
 }
