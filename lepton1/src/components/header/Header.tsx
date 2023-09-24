@@ -31,7 +31,7 @@ const Header = () => {
           </div>
           <div className="hire_dev">
             <button className="btn hire">
-              <a href="#">Hire Developers</a>
+              <a href="#">Work With Us</a>
             </button>
           </div>
           
