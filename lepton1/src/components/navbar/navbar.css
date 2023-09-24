@@ -63,7 +63,7 @@ li{
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition effect for hover */
+    transition: all 300ms ease-in;
   }
   
   .btn a {
@@ -75,6 +75,7 @@ li{
   .btn:hover {
     background-color: blue; /* Button background color on hover */
     /* border-color: white; Button border color on hover */
+    transform: scale(1.1);
   }
   
   .btn:hover a {
@@ -263,6 +264,10 @@ input{
             .navLists{
                 .navItem{
                     padding: 0 1rem;
+                    transition: all 300ms ease-in;
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                     .navlink{
                         font-size: 16px;
                         padding: 13px 20px;
@@ -285,7 +290,7 @@ input{
                     position: absolute;
                     height: 300px;
                     width: 300px;
-                    margin-top: 2rem;
+                    margin-top: 4rem;
                     margin-left: 15rem;
                 }
             }
