@@ -1,5 +1,5 @@
 import Navbar from './components/navbar/Navbar.tsx'
-import Header from './components/header/Header.tsx'
+import Header from './components/home/Home.tsx'
 import './App.scss'
 
 function App() {
