@@ -16,10 +16,10 @@ const Navbar = () => {
     <section className='navbarSection'>
       <header className="flex_header flex">
         <div className="logo_section">
-          <a href="#" className="logo flex">
+          <div className="logo flex">
             <img className='lepton_logo' src={testsvg}/>
             {/* <h1>hridoy</h1> */}
-          </a>
+          </div>
         </div>
         <div className={show_nav}>
           <ul className='navLists flex'>
