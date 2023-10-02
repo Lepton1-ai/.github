@@ -1,7 +1,7 @@
 // import fire from "./firebaseauth.tsx";
 // import { collection, addDoc, getDoc, doc } from "firebase/firestore"
 
-// const CountVisit = (count: any) => {
+// const CountVisit = (count: number | boolean) => {
 //     const colRef = collection(fire, 'count')
 
 //     const oldcount = getDoc(doc(fire, 'count'))
@@ -20,4 +20,3 @@
 // };
 
 // export default CountVisit;
-
