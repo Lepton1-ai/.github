@@ -3,6 +3,7 @@ import './navbar.scss'
 import testsvg from '/src/assets/lepton_1_logo_black.svg'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
+
 const Navbar = () => {
 
   const [show_nav, set_nav] = useState('navBar')

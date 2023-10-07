@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./time.css";
 
-function CLOCK(){
+function CLOCK() {
   const time = new Date().toLocaleTimeString();
   const [curr_time, set_time] = useState(time);
   const get_time = () => {

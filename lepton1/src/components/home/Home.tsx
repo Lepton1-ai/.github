@@ -1,5 +1,6 @@
 import "./home.scss";
 import CountUp from "react-countup";
+
 const Header = () => {
   return (
     <section className="header_wrap">

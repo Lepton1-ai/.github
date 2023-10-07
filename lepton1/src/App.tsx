@@ -5,10 +5,10 @@ import './App.scss'
 function App() {
   return (
     <>
-    <div>
-      <Navbar/>
-      <Header/>
-    </div>
+      <div>
+        <Navbar/>
+        <Header/>
+      </div>
     </>
   )
 }
