@@ -1,7 +1,7 @@
 import "./home.scss";
 import CountUp from "react-countup";
 
-const Header = () => {
+function Header() {
   return (
     <section className="header_wrap">
       <div className="header_container">
@@ -70,6 +70,6 @@ const Header = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Header;

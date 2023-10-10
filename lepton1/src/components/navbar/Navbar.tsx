@@ -4,13 +4,13 @@ import testsvg from '/src/assets/lepton_1_logo_black.svg'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-const Navbar = () => {
+function Navbar() {
 
   const [show_nav, set_nav] = useState('navBar')
-  const show_nav_fun = ()=>{
+  function show_nav_fun(){
     set_nav('navBar activenavbar')
   }
-  const close_nav_fun = ()=>{
+  function close_nav_fun(){
     set_nav('navBar')
   }
   return (
