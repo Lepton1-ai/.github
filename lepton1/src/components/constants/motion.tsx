@@ -1,4 +1,4 @@
-function textVariant(delay) {
+function textVariant(delay: number) {
     return {
       hidden: {
         y: -50,

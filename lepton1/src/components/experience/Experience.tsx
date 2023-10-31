@@ -62,7 +62,7 @@ function ExperienceCard({ experience }: { experience: ExperienceData }) {
 function Experience() {
   return (  
     <div className="workSection">
-    <motion.div variants={textVariant()} style={{color:"#00156A", borderBottom:"1px solid #00156A"}}>
+    <motion.div variants={textVariant(10)} style={{color:"#00156A", borderBottom:"1px solid #00156A"}}>
       <h2 className={"mx-auto sm:text-[20px] text-[14px] text-secondary uppercase tracking-wider text-center"}>
         Work Experience
       </h2>
