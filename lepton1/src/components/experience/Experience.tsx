@@ -5,7 +5,16 @@ import { experiences } from "../constants/index.js";
 import { textVariant } from "../constants/motion.js"
 import "./experience.scss"
 
-  const ExperienceCard = ({ experience }) => {
+interface ExperienceData {
+  title: string;
+  company_name: string;
+  date: string;
+  icon: string;
+  iconBg: string;
+  points: string[];
+}
+
+function ExperienceCard({ experience }: { experience: ExperienceData }) { 
     return (
       <VerticalTimelineElement
         contentStyle={{
@@ -51,25 +60,25 @@ import "./experience.scss"
   
 
 function Experience() {
-    return (  
-        <div className="workSection">
-        <motion.div variants={textVariant()} style={{color:"#00156A", borderBottom:"1px solid #00156A"}}>
-            <h2 className={"mx-auto sm:text-[20px] text-[14px] text-secondary uppercase tracking-wider text-center"}>
-                Work Experience
-            </h2>
-        </motion.div>
-        <div className="mt-20 flex flex-col">
-            <VerticalTimeline>
-            {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
-          ))}
-            </VerticalTimeline>
-        </div>
-        </div>
-    );
+  return (  
+    <div className="workSection">
+    <motion.div variants={textVariant()} style={{color:"#00156A", borderBottom:"1px solid #00156A"}}>
+      <h2 className={"mx-auto sm:text-[20px] text-[14px] text-secondary uppercase tracking-wider text-center"}>
+        Work Experience
+      </h2>
+    </motion.div>
+    <div className="mt-20 flex flex-col">
+      <VerticalTimeline>
+      {experiences.map((experience: ExperienceData, index: number) => (
+        <ExperienceCard
+          key={`experience-${index}`}
+          experience={experience}
+        />
+      ))}
+      </VerticalTimeline>
+    </div>
+    </div>
+  );
 }
 
 export default Experience;
