@@ -31,10 +31,10 @@ const experiences = [
         },
         {
           title: "Web Developer",
-          company_name: "Fish Vally",
+          company_name: "FishValy",
           icon: javascript,
           iconBg: "#383E56",
-          date: "Jan 2020 - Jan 2021",
+          date: "Jan 2020 - Jun 2023",
           points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
