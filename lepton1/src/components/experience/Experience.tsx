@@ -56,7 +56,7 @@ function ExperienceCard({ experience }: { experience: ExperienceData }) {
         </ul>
       </VerticalTimelineElement>
     );
-  };
+  }
   
 
 function Experience() {
