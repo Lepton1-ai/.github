@@ -1,4 +1,4 @@
-export const textVariant = (delay) => {
+function textVariant(delay) {
     return {
       hidden: {
         y: -50,
@@ -14,4 +14,7 @@ export const textVariant = (delay) => {
         },
       },
     };
-  };
+}
+
+
+export default textVariant

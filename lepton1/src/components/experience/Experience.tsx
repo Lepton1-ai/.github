@@ -1,8 +1,8 @@
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
-import { experiences } from "../constants/index.js";
-import { textVariant } from "../constants/motion.js"
+import experiences from "../constants/index.tsx";
+import textVariant from "../constants/motion.tsx"
 import "./experience.scss"
 
 interface ExperienceData {

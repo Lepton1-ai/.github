@@ -2,7 +2,7 @@ import figma from '/src/assets/tech/figma.png'
 import reactjs from '/src/assets/tech/reactjs.png'
 import redux from '/src/assets/tech/redux.png'
 import javascript from '/src/assets/tech/javascript.png'
-    export const experiences = [
+export const experiences = [
         {
           title: "React.js Developer",
           company_name: "AIMANGO",
@@ -55,5 +55,5 @@ import javascript from '/src/assets/tech/javascript.png'
             "Figma supports a wide range of plugins and integrations with other design and development tools. This makes it versatile and adaptable to your specific design workflow.",
           ],
         },
-      ];
+];
       
